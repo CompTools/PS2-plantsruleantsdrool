@@ -24,5 +24,6 @@ fi
 #echo $count
 	#echo $ORIGIN $DEST $DEP_DEL15 $ARR_DEL15 $WEATHER_DELAY
 done
-echo -e "Reporting the final count: \n"
+echo -e "The number of flights that were delayed more than 15 minutes into or out of Gainesville is:"
 tail -1 tmp_count.txt
+rm  tmp_count.txt
