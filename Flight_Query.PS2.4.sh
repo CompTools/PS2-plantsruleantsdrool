@@ -10,12 +10,13 @@
   grep ", FL" ./data/flights.May2017-Apr2018.csv > FL.txt
 
 #Capture 4th column which has city names
-  cut -d '"' -f 4 ./FL.txt > .FLairport.txt
+  cut -d '"' -f 4 ./FL.txt > FLairport.txt
 
 #Print out into file
-  grep "FL" .FLairport.txt | cut -d "," -f 1 | sort -u > airportinFL.txt
+  grep "FL" FLairport.txt | cut -d "," -f 1 | sort -u > airportinFL.txt
   cat airportinFL.txt
 
 #clean up
 rm FL.txt
+rm FLairport.txt
 rm airportinFL.txt
