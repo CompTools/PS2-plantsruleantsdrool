@@ -17,6 +17,7 @@ I have provided a dataset that you will use for this. The dataset and it's descr
 
 The goal of this project is to write a Bash script that:
 1. Counts the number of flights that were delayed more than 15 minutes into or out of Gainesville, FL (airport code GNV) during the timeframe covered by the dataset. (*2 points*)
+*Flight_Query.PS2.1.sh*
 2. Produces a table (text is fine) with the data to fill in this table (*13 points*):
 
 
@@ -25,13 +26,13 @@ GNV to: | Total flights | Total flights delayed (>15min) | Total flights delayed
 ATL |
 CLT |
 MIA |
-
+*Flight_Query.PS2.2.sh*
 3. Within a function, prints a list of all unique airport codes contained in the dataset. (*3 points*)
-
+*Flight_Query.PS2.3.sh*
 4. Within a function lists the cities in Florida that have airports in the dataset. (*2 points*)
-
+*Flight_Query.PS2.4.sh*
 **Bonus question:**  Asks for user input (see chapter 28) to enter either a airport code or city, state name and then calculates the number of flights as in question 1. (*5 points extra credit*)
-
+*Flight_Query.PS2.BONUS.sh*
 # To submit
 You should submit your answer as one or more scripts in a git repository. Submit the link in Canvas.
 
