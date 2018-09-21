@@ -1,4 +1,9 @@
 #!/bin/bash
+
+#*******************************************
+# All my answers and scripts can be found here :https://github.com/Cactusolo/PS2
+#******************************************
+
 #The goal of this project is to write a Bash script that:
 #
 #Counts the number of flights that were delayed more than 15 minutes into or out of Gainesville, FL (airport code GNV) 
