@@ -6,7 +6,7 @@ Please Input Your Query:
 
 #. 3 letter Airport Code
     or
-#. City,State Name (seperated by ",")
+#. City,State Name separated by ",")
     or
 #. type "Quit" to exit
 "
