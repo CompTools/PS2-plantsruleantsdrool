@@ -31,13 +31,13 @@ fi
 
 if [[ $REPLY =~ ^[A-Z]{3}$ ]]; then
   #echo -e "It's Airport Code: $REPLY"
-  echo -e "Please wait ...\nThe Flights in and out of Gainesville from $REPLY is:"
+  echo -e "Please wait ...\nThe number of delayed flights in or out of $REPLY is:"
   grep -w "$REPLY" ./data/flights.May2017-Apr2018.csv | cut -d "," -f 13,16 | grep -c 1.00
 elif [[ $REPLY =~ ^[A-Z].*[A-Z]{2}$ ]]; then
   #echo -e "City,State Name: $REPLY"
   Query=$(echo "$REPLY"|sed 's/^/"/g;s/$/"/g')
   #echo $Query
-  echo -e "Please wait ...\nThe Flights in and out of Gainesville from $REPLY is:"
+  echo -e "Please wait ...\nThe number of delayed flights in or out of $REPLY is:"
   grep -w "$REPLY" ./data/flights.May2017-Apr2018.csv | cut -d "," -f 13,16 | grep -c 1.00
 else
   invalid_input >&2
