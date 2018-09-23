@@ -18,6 +18,29 @@ I have provided a dataset that you will use for this. The dataset and it's descr
 The goal of this project is to write a Bash script that:
 1. Counts the number of flights that were delayed more than 15 minutes into or out of Gainesville, FL (airport code GNV) during the timeframe covered by the dataset. (*2 points*)
 **Flight_Query.PS2.1.sh**
+
+**Just a note here...Your script works and that is fine, but by going line by line, it is quite slow:
+
+```
+[magitz@login2 PS2-plantsruleantsdrool]$ time bash Flight_Query.PS2.1.sh 
+The number of flights that were delayed more than 15 minutes into or out of Gainesville is:
+950
+
+real	0m12.465s
+user	0m9.914s
+sys	0m8.528s
+[magitz@login2 PS2-plantsruleantsdrool]$ time grep GNV data/flights.May2017-Apr2018.csv | cut -d"," -f 13,16 | grep 1|wc -l
+950
+
+real	0m0.239s
+user	0m0.092s
+sys	0m0.154s
+[magitz@login2 PS2-plantsruleantsdrool]$ 
+```
+
+So 12.5 seconds vs 0.25 for a grep-based solution.
+
+
 2. Produces a table (text is fine) with the data to fill in this table (*13 points*):
 
 
@@ -43,19 +66,27 @@ For questions, 1, 3 and 4, I will mostly be looking for the right answer.
 
 **Your score on 1,3,4 (I'll fill this in when I grade):**
 
+1. 2pts, see notes above on time.
+3. 3pts
+4. 2pts
+
 
 For question 2, you will receive points for:
 
 Rubric item | Points | Your score
 ------------|--------|-----------
-Using github| 1 point |
-Having at least one commit from each member of the team | 2 points |
-Using meaningful commit messages | 2 points |
-Using functions correctly | 2 points |
-Using comments in code | 2 points
-Using spacing to make code readable | 2 points |
-Getting the correct answer | 2 points |
+Using github| 1 point | **1**
+Having at least one commit from each member of the team | 2 points |**2**
+Using meaningful commit messages | 2 points | **2**
+Using functions correctly | 2 points | **0: Not done as functions**
+Using comments in code | 2 points| **2**
+Using spacing to make code readable | 2 points | **2**
+Getting the correct answer | 2 points | **2**
 
 **Extra credit:**
 
+5 pts
+
 **Total points:**
+
+23/20
